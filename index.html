@@ -36,7 +36,39 @@
 <p>sNIKEs Blog ist umgezogen: <a href="https://snike79.wordpress.com">sNIKEs Blog - https://snike79.wordpress.com</a><br>
 Eine automatische Weiterleitung ist eingerichtet: 10 Sekunden!
 Bitte nicht vergessen, das Lesezeichen anzupassen!  </p>
+<script language="JavaScript"> 
+<!--     
 
+    function countdown(zahl){ 
+        if(zahl>1){  
+        // über 1 Sekunde hinaus -> x Sekunden 
+        document.getElementById('downloading').innerHTML=zahl+" Sekunden"; 
+        count(zahl);             
+        } 
+        else if(zahl==1){  
+        // 1 Sekunde 
+        document.getElementById('downloading').innerHTML=zahl+" Sekunde"; 
+        count(zahl);             
+        } 
+        else {  
+        // Countdown abgelaufen, beliebige Handlung kann eingebaut werden 
+        document.getElementById('downloading').innerHTML="0 Sekunden"; 
+        alert('Zeit ist abgelaufen!'); 
+        } 
+    } 
+     
+    function count(countzahl){ 
+    // gewünschte Handlung kann hier eingebaut werden 
+    countzahl=countzahl-1; 
+        setTimeout("countdown("+countzahl+");",1000);             
+    } 
+         
+count(10); 
+
+// --> 
+</script> 
+
+<b>Countdown: <span id="downloading">10 Sekunden</span>!</b> 
 <p>Dies hat mehrere Gründe:  </p>
 
 <ul>
