@@ -31,7 +31,7 @@ function count(countzahl) {
 } 
 
 function abbrechen(){
-	document.getElementById("spanText").textContent = "&nbsp;";
+	document.getElementById("spanText").textContent = " ";
 	isCancelled = true;
 }
 
